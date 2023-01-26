@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://rajaosama.me
+
+# Sitemaps
+Sitemap: https://rajaosama.me/sitemap.xml

@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+
+/* font-family: 'Monoton', cursive; */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* background-color: #16181d; */
+  /* background-color: #040404;
+  color: #fff; */
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+  font-family: "Yuji Boku", cursive;
+}
+
+.splashLogo {
+  font-family: "Poppins", cursive;
+  font-weight: bold;
+  font-size: 10vw;
+  line-height: 0.9;
+}
+
+.vertical-rotate {
+  transform: rotate(180deg);
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -webkit-print-color-adjust: exact !important;
+}
+
+/* className={"textBg"} */
+.textBg {
+  background-color: rgb(252, 237, 169);
+  padding: 10px 0px;
+}
+#markdown {
+  font-family: "Poppins", sans-serif;
+}
+
+/* 
+#markdown h2 {
+  padding-top: 10px;
+  font-size: 2em;
+  padding-bottom: 10px;
+}
+
+#markdown h3 {
+  font-size: 1.4em;
+  font-weight: bolder;
+}
+
+#markdown h4 {
+  padding-top: 10px;
+  font-size: 1.2em;
+  padding-bottom: 10px;
+}
+
+#markdown h5 {
+  padding-top: 10px;
+  font-size: 1.4em;
+  padding-bottom: 10px;
+}
+
+#markdown p {
+  padding-top: 10px;
+  font-size: 1em;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+#markdown table {
+  padding-top: 10px;
+  border-spacing: 0;
+  padding-bottom: 10px;
+  border-collapse: collapse;
+}
+
+#markdown td {
+  padding-top: 10px;
+  text-align: left;
+  padding-bottom: 10px;
+  font-weight: normal;
+}
+
+#markdown pre {
+  width: 73vw;
+  margin: 10px 0;
+  padding: 49px;
+  overflow: scroll;
+  background: wheat;
+  color: black;
+}
+#markdown pre::before {
+  display: block;
+  content: "Content";
+  background-color: white;
+  width: fit-content;
+  padding: 10px;
+}
+
+#markdown a {
+  color: red;
+} */

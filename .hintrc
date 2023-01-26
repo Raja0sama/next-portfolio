@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/text-alternatives": "off",
+    "eslint-disable-next-line": "off",
+    "@next/next/no-img-element": "off",
+    "no-inline-styles": "off"
+  }
+}

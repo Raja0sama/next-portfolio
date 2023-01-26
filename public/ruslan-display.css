@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "main";
+  src: URL("/RuslanDisplay.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "secondary";
+  src: URL("/AvenirNextLTPro-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "secondary";
+  font-weight: bold;
+  src: URL("/AvenirNextLTPro-Bold.otf") format("opentype");
+}

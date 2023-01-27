@@ -114,6 +114,6 @@ export async function getServerSideProps({ req, res, params }: any) {
       //   metaTitle: data.pages?.metaTitle,
       //   metaDescription: data.pages?.metaDescription,
       layout: data.layout.content,
-    }, // will be passed to the page component as props
+    },
   };
 }

@@ -1,11 +1,10 @@
+import { Bg, Music } from "@/components/index";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
 
-import { Bg, Music } from "@/components/index";
-
-import theme from "../../theme";
-import Link from "next/link";
 import Image from "next/image.js";
+import Link from "next/link";
+import theme from "../../theme";
 
 interface propsType {
   disableExtra?: boolean;
@@ -66,6 +65,7 @@ const Layout = ({
         <Image
           src={"/sound.gif"}
           alt={"Sound.gif"}
+          key={e.url}
           style={{
             width: 35,
             padding: 5,
@@ -75,7 +75,7 @@ const Layout = ({
     }
     if (e?.link) {
       return (
-        <span className="vertical-rotate font-['Nanum_Gothic_Coding']">
+        <span key={e.url} className="vertical-rotate font-['Nanum_Gothic_Coding']">
           <Link href={e.url}>{e.label}</Link>
         </span>
       );

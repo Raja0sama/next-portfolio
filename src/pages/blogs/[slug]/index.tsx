@@ -1,14 +1,15 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-import React, { useEffect, useState } from "react";
-import Layout from "@/components/layout";
-import { gql } from "@apollo/client";
-import apolloClient from "src/utils/apollo-client";
 import { motion, useAnimation } from "framer-motion";
+import { useEffect, useState } from "react";
 
 import { GithubComponent } from "@/components/index";
-import dynamic from "next/dynamic";
 import Image from "next/image";
+import Layout from "@/components/layout";
+import apolloClient from "src/utils/apollo-client";
+import dynamic from "next/dynamic";
+import { gql } from "@apollo/client";
+
 interface BlogsTypes {
   layout: any;
   blog: any;
@@ -32,6 +33,14 @@ const Blog = ({ layout, blog }: BlogsTypes) => {
     }));
   }, []);
   const [theme, settheme] = useState(true);
+
+  useEffect(() => {
+    document.documentElement.setAttribute(
+      "data-color-mode",
+      !theme ? "dark" : "light"
+    );
+  }, [theme]);
+
   return (
     <Layout
       disableEffect={true}
@@ -70,7 +79,7 @@ const Blog = ({ layout, blog }: BlogsTypes) => {
             <MarkdownPreview
               source={blog?.content}
               style={{ background: "transparent", fontFamily: "Poppins" }}
-              className={"mix-blend-difference font-['Poppins']"}
+              className={"font-['Poppins']"}
               wrapperElement={{
                 "data-color-mode": "dark",
               }}
